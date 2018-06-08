@@ -1,0 +1,5540 @@
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'ubuntu/xenial64'...
+[KProgress: 10%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'ubuntu/xenial64' is up to date...
+==> default: Setting the name of the VM: MAVEN_SVN_TEST_default_1528466092977_2694
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Remote connection disconnect. Retrying...
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Remote connection disconnect. Retrying...
+    default: Warning: Connection reset. Retrying...
+    default: 
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default: 
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 5.1.34
+    default: VirtualBox Version: 5.2
+==> default: Mounting shared folders...
+    default: /vagrant => /home/bajpai/VM/MAVEN_SVN_TEST
+==> default: Running provisioner: shell...
+    default: Running: /tmp/vagrant-shell20180608-11946-15xv4dz.sh
+    default: Reading package lists...
+    default: Building dependency tree...
+    default: 
+    default: Reading state information...
+    default: tar is already the newest version (1.28-2.1ubuntu0.1).
+    default: Suggested packages:
+    default:   zip
+    default: The following NEW packages will be installed:
+    default:   unzip
+    default: 0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+    default: Need to get 158 kB of archives.
+    default: After this operation, 530 kB of additional disk space will be used.
+    default: Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 unzip amd64 6.0-20ubuntu1 [158 kB]
+    default: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+    default: Fetched 158 kB in 22s (6,909 B/s)
+    default: Selecting previously unselected package unzip.
+    default: (Reading database ... 
+    default: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%
+    default: (Reading database ... 65%
+    default: (Reading database ... 70%
+    default: (Reading database ... 75%
+    default: (Reading database ... 80%
+    default: (Reading database ... 85%
+    default: (Reading database ... 90%
+    default: (Reading database ... 95%
+    default: (Reading database ... 100%(Reading database ... 54127 files and directories currently installed.)
+    default: Preparing to unpack .../unzip_6.0-20ubuntu1_amd64.deb ...
+    default: Unpacking unzip (6.0-20ubuntu1) ...
+    default: Processing triggers for mime-support (3.59ubuntu1) ...
+    default: Processing triggers for man-db (2.7.5-1) ...
+    default: Setting up unzip (6.0-20ubuntu1) ...
+    default: Installing Oracle Java 8
+    default:  Oracle Java (JDK) Installer (automatically downloads and installs Oracle JDK8). There are no actual Java files in this PPA.
+    default: 
+    default: Important -> Why Oracle Java 7 And 6 Installers No Longer Work: http://www.webupd8.org/2017/06/why-oracle-java-7-and-6-installers-no.html
+    default: 
+    default: Update: Oracle Java 9 has reached end of life: http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html
+    default: 
+    default: The PPA supports Ubuntu 18.04, 17.10, 16.04, 14.04 and 12.04.
+    default: 
+    default: More info (and Ubuntu installation instructions):
+    default: - for Oracle Java 8: http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html
+    default: 
+    default: Debian installation instructions:
+    default: - Oracle Java 8: http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html
+    default: 
+    default: For Oracle Java 10, see a different PPA: https://www.linuxuprising.com/2018/04/install-oracle-java-10-in-ubuntu-or.html
+    default:  More info: https://launchpad.net/~webupd8team/+archive/ubuntu/java
+    default: gpg: 
+    default: keyring `/tmp/tmpvdspgnen/secring.gpg' created
+    default: gpg: 
+    default: keyring `/tmp/tmpvdspgnen/pubring.gpg' created
+    default: gpg: 
+    default: requesting key EEA14886 from hkp server keyserver.ubuntu.com
+    default: gpg: 
+    default: /tmp/tmpvdspgnen/trustdb.gpg: trustdb created
+    default: gpg: 
+    default: key EEA14886: public key "Launchpad VLC" imported
+    default: gpg: 
+    default: no ultimately trusted keys found
+    default: gpg: 
+    default: Total number processed: 1
+    default: gpg: 
+    default:               imported: 1
+    default:   (RSA: 1)
+    default: OK
+    default: Get:1 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease [17.5 kB]
+    default: Hit:2 http://archive.ubuntu.com/ubuntu xenial InRelease
+    default: Get:3 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+    default: Get:4 http://security.ubuntu.com/ubuntu xenial-security InRelease [107 kB]
+    default: Get:5 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial/main amd64 Packages [1,556 B]
+    default: Get:6 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+    default: Get:7 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial/main Translation-en [928 B]
+    default: Get:8 http://archive.ubuntu.com/ubuntu xenial/main Sources [868 kB]
+    default: Get:9 http://security.ubuntu.com/ubuntu xenial-security/main Sources [125 kB]
+    default: Get:10 http://archive.ubuntu.com/ubuntu xenial/restricted Sources [4,808 B]
+    default: Get:11 http://security.ubuntu.com/ubuntu xenial-security/restricted Sources [2,116 B]
+    default: Get:12 http://archive.ubuntu.com/ubuntu xenial/universe Sources [7,728 kB]
+    default: Get:13 http://security.ubuntu.com/ubuntu xenial-security/universe Sources [65.6 kB]
+    default: Get:14 http://security.ubuntu.com/ubuntu xenial-security/multiverse Sources [2,120 B]
+    default: Get:15 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [502 kB]
+    default: Get:16 http://archive.ubuntu.com/ubuntu xenial/multiverse Sources [179 kB]
+    default: Get:17 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [7,532 kB]
+    default: Get:18 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [216 kB]
+    default: Get:19 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [352 kB]
+    default: Get:20 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en [4,354 kB]
+    default: Get:21 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [132 kB]
+    default: Get:22 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [144 kB]
+    default: Get:23 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [3,460 B]
+    default: Get:24 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en [106 kB]
+    default: Get:25 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en [1,744 B]
+    default: Get:26 http://archive.ubuntu.com/ubuntu xenial-updates/main Sources [307 kB]
+    default: Get:27 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Sources [2,524 B]
+    default: Get:28 http://archive.ubuntu.com/ubuntu xenial-updates/universe Sources [203 kB]
+    default: Get:29 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Sources [8,404 B]
+    default: Get:30 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [785 kB]
+    default: Get:31 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en [325 kB]
+    default: Get:32 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [632 kB]
+    default: Get:33 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [254 kB]
+    default: Get:34 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [16.4 kB]
+    default: Get:35 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en [8,344 B]
+    default: Get:36 http://archive.ubuntu.com/ubuntu xenial-backports/main Sources [3,436 B]
+    default: Get:37 http://archive.ubuntu.com/ubuntu xenial-backports/universe Sources [5,844 B]
+    default: Get:38 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [4,844 B]
+    default: Get:39 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en [3,220 B]
+    default: Get:40 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [7,400 B]
+    default: Get:41 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en [3,996 B]
+    default: Fetched 25.2 MB in 31s (792 kB/s)
+    default: Reading package lists...
+    default: Reading package lists...
+    default: Building dependency tree...
+    default: Reading state information...
+    default: The following additional packages will be installed:
+    default:   binutils gsfonts gsfonts-x11 java-common libfontenc1 libxfont1
+    default:   oracle-java8-set-default x11-common xfonts-encodings xfonts-utils
+    default: Suggested packages:
+    default:   binutils-doc binfmt-support visualvm ttf-baekmuk | ttf-unfonts
+    default:   | ttf-unfonts-core ttf-kochi-gothic | ttf-sazanami-gothic ttf-kochi-mincho
+    default:   | ttf-sazanami-mincho ttf-arphic-uming firefox | firefox-2 | iceweasel
+    default:   | mozilla-firefox | iceape-browser | mozilla-browser | epiphany-gecko
+    default:   | epiphany-webkit | epiphany-browser | galeon | midbrowser
+    default:   | moblin-web-browser | xulrunner | xulrunner-1.9 | konqueror
+    default:   | chromium-browser | midori | google-chrome
+    default: The following NEW packages will be installed:
+    default:   binutils gsfonts gsfonts-x11 java-common libfontenc1 libxfont1
+    default:   oracle-java8-installer oracle-java8-set-default x11-common xfonts-encodings
+    default:   xfonts-utils
+    default: 0 upgraded, 11 newly installed, 0 to remove and 0 not upgraded.
+    default: Need to get 6,520 kB of archives.
+    default: After this operation, 20.5 MB of additional disk space will be used.
+    default: Get:1 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial/main amd64 oracle-java8-installer all 8u171-1~webupd8~0 [33.3 kB]
+    default: Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 binutils amd64 2.26.1-1ubuntu1~16.04.6 [2,311 kB]
+    default: Get:3 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial/main amd64 oracle-java8-set-default all 8u171-1~webupd8~0 [6,846 B]
+    default: Get:4 http://archive.ubuntu.com/ubuntu xenial/main amd64 java-common all 0.56ubuntu2 [7,742 B]
+    default: Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 gsfonts all 1:8.11+urwcyr1.0.7~pre44-4.2ubuntu1 [3,374 kB]
+    default: Get:6 http://archive.ubuntu.com/ubuntu xenial/main amd64 libfontenc1 amd64 1:1.1.3-1 [13.9 kB]
+    default: Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libxfont1 amd64 1:1.5.1-1ubuntu0.16.04.4 [95.0 kB]
+    default: Get:8 http://archive.ubuntu.com/ubuntu xenial/main amd64 x11-common all 1:7.7+13ubuntu3 [22.4 kB]
+    default: Get:9 http://archive.ubuntu.com/ubuntu xenial/main amd64 xfonts-encodings all 1:1.0.4-2 [573 kB]
+    default: Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 xfonts-utils amd64 1:7.7+3ubuntu0.16.04.2 [74.6 kB]
+    default: Get:11 http://archive.ubuntu.com/ubuntu xenial/universe amd64 gsfonts-x11 all 0.24 [7,314 B]
+    default: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+    default: Fetched 6,520 kB in 24s (267 kB/s)
+    default: Selecting previously unselected package binutils.
+    default: (Reading database ... 
+    default: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%
+    default: (Reading database ... 20%(Reading database ... 25%
+    default: (Reading database ... 30%
+    default: (Reading database ... 35%
+    default: (Reading database ... 40%
+    default: (Reading database ... 45%
+    default: (Reading database ... 50%
+    default: (Reading database ... 55%(Reading database ... 60%
+    default: (Reading database ... 65%
+    default: (Reading database ... 70%
+    default: (Reading database ... 75%
+    default: (Reading database ... 80%
+    default: (Reading database ... 85%
+    default: (Reading database ... 90%
+    default: (Reading database ... 95%
+    default: (Reading database ... 100%(Reading database ... 54145 files and directories currently installed.)
+    default: Preparing to unpack .../binutils_2.26.1-1ubuntu1~16.04.6_amd64.deb ...
+    default: Unpacking binutils (2.26.1-1ubuntu1~16.04.6) ...
+    default: Selecting previously unselected package java-common.
+    default: Preparing to unpack .../java-common_0.56ubuntu2_all.deb ...
+    default: Unpacking java-common (0.56ubuntu2) ...
+    default: Processing triggers for libc-bin (2.23-0ubuntu10) ...
+    default: Processing triggers for man-db (2.7.5-1) ...
+    default: Setting up binutils (2.26.1-1ubuntu1~16.04.6) ...
+    default: Processing triggers for libc-bin (2.23-0ubuntu10) ...
+    default: Selecting previously unselected package oracle-java8-installer.
+    default: (Reading database ... 
+    default: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%
+    default: (Reading database ... 60%(Reading database ... 65%
+    default: (Reading database ... 70%
+    default: (Reading database ... 75%
+    default: (Reading database ... 80%
+    default: (Reading database ... 85%
+    default: (Reading database ... 90%
+    default: (Reading database ... 95%
+    default: (Reading database ... 100%(Reading database ... 54361 files and directories currently installed.)
+    default: Preparing to unpack .../oracle-java8-installer_8u171-1~webupd8~0_all.deb ...
+    default: oracle-license-v1-1 license has already been accepted
+    default: Unpacking oracle-java8-installer (8u171-1~webupd8~0) ...
+    default: Processing triggers for mime-support (3.59ubuntu1) ...
+    default: Processing triggers for shared-mime-info (1.5-2ubuntu0.1) ...
+    default: Setting up java-common (0.56ubuntu2) ...
+    default: Setting up oracle-java8-installer (8u171-1~webupd8~0) ...
+    default: No /var/cache/oracle-jdk8-installer/wgetrc file found.
+    default: Creating /var/cache/oracle-jdk8-installer/wgetrc and
+    default: 
+    default: using default oracle-java8-installer wgetrc settings for it.
+    default: 
+    default: Downloading Oracle Java 8...
+    default: --2018-06-08 13:57:23--  http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz
+    default: Resolving download.oracle.com (download.oracle.com)... 
+    default: 104.108.220.248
+    default: Connecting to download.oracle.com (download.oracle.com)|104.108.220.248|:80... 
+    default: connected.
+    default: HTTP request sent, awaiting response... 
+    default: 302 Moved Temporarily
+    default: Location: https://edelivery.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz [following]
+    default: --2018-06-08 13:57:23--  https://edelivery.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz
+    default: Resolving edelivery.oracle.com (edelivery.oracle.com)... 
+    default: 104.108.155.19
+    default: , 
+    default: 2600:1417:2c:1a4::2d3e
+    default: , 
+    default: 2600:1417:2c:19f::2d3e
+    default: Connecting to edelivery.oracle.com (edelivery.oracle.com)|104.108.155.19|:443... 
+    default: connected.
+    default: HTTP request sent, awaiting response... 
+    default: 302 Moved Temporarily
+    default: Location: http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz?AuthParam=1528466365_05294ce6f6e76125acead9db81765c2f [following]
+    default: --2018-06-08 13:57:24--  http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz?AuthParam=1528466365_05294ce6f6e76125acead9db81765c2f
+    default: Connecting to download.oracle.com (download.oracle.com)|104.108.220.248|:80... 
+    default: connected.
+    default: HTTP request sent, awaiting response... 
+    default: 200 OK
+    default: Length: 
+    default: 190890122
+    default:  (182M)
+    default:  [application/x-gzip]
+    default: Saving to: ‘jdk-8u171-linux-x64.tar.gz’
+    default: 
+    default:      0K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: ..
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:   1%
+    default:  4.50M
+    default:  40s
+    default:   3072K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:   3%
+    default:  5.84M
+    default:  35s
+    default:   6144K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:   4%
+    default:  5.14M
+    default:  34s
+    default:   9216K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .  6% 4.21M 35s
+    default: 
+    default:  12288K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:   8%
+    default:  3.61M
+    default:  37s
+    default:  15360K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:   9%
+    default:  5.09M
+    default:  35s
+    default:  18432K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 11% 6.12M 34s
+    default: 
+    default:  21504K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 13% 3.46M 35s
+    default: 
+    default:  24576K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 14% 6.60M 33s
+    default: 
+    default:  27648K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 16% 4.18M 33s
+    default: 
+    default:  30720K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  18%
+    default:  5.47M
+    default:  31s
+    default:  33792K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 19% 3.56M 32s
+    default: 
+    default:  36864K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 21% 6.62M 30s
+    default: 
+    default:  39936K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 23% 4.52M 30s
+    default: 
+    default:  43008K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  24%
+    default:  4.18M
+    default:  29s
+    default:  46080K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  26%
+    default:  5.19M
+    default:  29s
+    default:  49152K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  28%
+    default:  3.42M
+    default:  29s
+    default:  52224K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  29%
+    default:  6.22M
+    default:  27s
+    default:  55296K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  31%
+    default:  4.37M
+    default:  27s
+    default:  58368K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  32%
+    default:  5.77M
+    default:  26s
+    default:  61440K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  34%
+    default:  4.15M
+    default:  26s
+    default:  64512K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  36%
+    default:  4.95M
+    default:  25s
+    default:  67584K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  37%
+    default:  5.06M
+    default:  24s
+    default:  70656K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  39%
+    default:  4.92M
+    default:  23s
+    default:  73728K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  41%
+    default:  4.34M
+    default:  23s
+    default:  76800K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  42%
+    default:  4.65M
+    default:  22s
+    default:  79872K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 44% 4.00M 22s
+    default: 
+    default:  82944K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  46%
+    default:  4.90M
+    default:  21s
+    default:  86016K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  47%
+    default:  5.05M
+    default:  20s
+    default:  89088K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  49%
+    default:  4.72M
+    default:  20s
+    default:  92160K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  51%
+    default:  3.70M
+    default:  19s
+    default:  95232K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  52%
+    default:  5.02M
+    default:  19s
+    default:  98304K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  54%
+    default:  5.01M 18s
+    default: 
+    default: 101376K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  56%
+    default:  4.20M
+    default:  17s
+    default: 104448K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  57%
+    default:  4.22M
+    default:  17s
+    default: 107520K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 59% 6.12M 16s
+    default: 
+    default: 110592K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 60% 4.54M 15s
+    default: 
+    default: 113664K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 62% 3.52M 15s
+    default: 
+    default: 116736K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 64% 4.04M 14s
+    default: 
+    default: 119808K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 65% 4.79M 13s
+    default: 
+    default: 122880K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 67% 4.91M 13s
+    default: 
+    default: 125952K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 69% 4.50M 12s
+    default: 
+    default: 129024K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 70% 3.87M 12s
+    default: 132096K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 72% 3.83M 11s
+    default: 
+    default: 135168K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  74% 5.53M 10s
+    default: 138240K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  75%
+    default:  5.10M
+    default:  10s
+    default: 141312K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  ..
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  77%
+    default:  1.56M
+    default:  9s
+    default: 144384K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 79% 3.63M 9s
+    default: 
+    default: 147456K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 80% 4.54M 8s
+    default: 
+    default: 150528K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 82% 4.40M 7s
+    default: 
+    default: 153600K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 84% 1.98M 7s
+    default: 
+    default: 156672K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 85% 5.92M 6s
+    default: 
+    default: 159744K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 87% 4.42M 5s
+    default: 
+    default: 162816K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 88% 3.78M 5s
+    default: 
+    default: 165888K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 90% 3.20M 4s
+    default: 
+    default: 168960K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  92%
+    default:  5.36M
+    default:  3s
+    default: 172032K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 93%
+    default:  3.24M
+    default:  3s
+    default: 175104K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 95% 5.21M
+    default:  2s
+    default: 
+    default: 178176K 
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 97% 2.20M 1s
+    default: 
+    default: 181248K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 98% 5.98M 0s
+    default: 
+    default: 184320K .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default:  
+    default: 100%
+    default:  4.86M
+    default: =43s
+    default: 2018-06-08 13:58:07 (4.24 MB/s) - ‘jdk-8u171-linux-x64.tar.gz’ saved [190890122/190890122]
+    default: Download done.
+    default: Removing outdated cached downloads...
+    default: update-alternatives: error: 
+    default: no alternatives for java
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/ControlPanel to provide /usr/bin/ControlPanel (ControlPanel) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/java to provide /usr/bin/java (java) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/javaws to provide /usr/bin/javaws (javaws) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/jcontrol to provide /usr/bin/jcontrol (jcontrol) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/orbd to provide /usr/bin/orbd (orbd) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/servertool to provide /usr/bin/servertool (servertool) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/tnameserv to provide /usr/bin/tnameserv (tnameserv) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/appletviewer to provide /usr/bin/appletviewer (appletviewer) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/extcheck to provide /usr/bin/extcheck (extcheck) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/idlj to provide /usr/bin/idlj (idlj) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jar to provide /usr/bin/jar (jar) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javac to provide /usr/bin/javac (javac) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javafxpackager to provide /usr/bin/javafxpackager (javafxpackager) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javah to provide /usr/bin/javah (javah) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javap to provide /usr/bin/javap (javap) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javapackager to provide /usr/bin/javapackager (javapackager) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jhat to provide /usr/bin/jhat (jhat) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jmc to provide /usr/bin/jmc (jmc) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jps to provide /usr/bin/jps (jps) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jsadebugd to provide /usr/bin/jsadebugd (jsadebugd) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jvisualvm to provide /usr/bin/jvisualvm (jvisualvm) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/native2ascii to provide /usr/bin/native2ascii (native2ascii) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/rmic to provide /usr/bin/rmic (rmic) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/schemagen to provide /usr/bin/schemagen (schemagen) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/wsgen to provide /usr/bin/wsgen (wsgen) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/wsimport to provide /usr/bin/wsimport (wsimport) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/xjc to provide /usr/bin/xjc (xjc) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/lib/amd64/libnpjp2.so to provide /usr/lib/mozilla/plugins/libjavaplugin.so (mozilla-javaplugin.so) in auto mode
+    default: Oracle JDK 8 installed
+    default: 
+    default: #####Important########
+    default: To set Oracle JDK8 as default, install the "oracle-java8-set-default" package.
+    default: E.g.: sudo apt install oracle-java8-set-default
+    default: On Ubuntu systems, oracle-java8-set-default is most probably installed
+    default: automatically with this package.
+    default: ######################
+    default: Selecting previously unselected package oracle-java8-set-default.
+    default: (Reading database ... 
+    default: (Reading database ... 5%
+    default: (Reading database ... 10%
+    default: (Reading database ... 15%
+    default: (Reading database ... 20%
+    default: (Reading database ... 25%
+    default: (Reading database ... 30%
+    default: (Reading database ... 35%
+    default: (Reading database ... 40%
+    default: (Reading database ... 45%
+    default: (Reading database ... 50%
+    default: (Reading database ... 55%
+    default: (Reading database ... 60%
+    default: (Reading database ... 65%
+    default: (Reading database ... 70%
+    default: (Reading database ... 75%
+    default: (Reading database ... 80%
+    default: (Reading database ... 85%
+    default: (Reading database ... 90%
+    default: (Reading database ... 95%
+    default: (Reading database ... 100%
+    default: (Reading database ... 
+    default: 54402 files and directories currently installed.)
+    default: Preparing to unpack .../oracle-java8-set-default_8u171-1~webupd8~0_all.deb ...
+    default: Unpacking oracle-java8-set-default (8u171-1~webupd8~0) ...
+    default: Selecting previously unselected package gsfonts.
+    default: Preparing to unpack .../gsfonts_1%3a8.11+urwcyr1.0.7~pre44-4.2ubuntu1_all.deb ...
+    default: Unpacking gsfonts (1:8.11+urwcyr1.0.7~pre44-4.2ubuntu1) ...
+    default: Selecting previously unselected package libfontenc1:amd64.
+    default: Preparing to unpack .../libfontenc1_1%3a1.1.3-1_amd64.deb ...
+    default: Unpacking libfontenc1:amd64 (1:1.1.3-1) ...
+    default: Selecting previously unselected package libxfont1:amd64.
+    default: Preparing to unpack .../libxfont1_1%3a1.5.1-1ubuntu0.16.04.4_amd64.deb ...
+    default: Unpacking libxfont1:amd64 (1:1.5.1-1ubuntu0.16.04.4) ...
+    default: Selecting previously unselected package x11-common.
+    default: Preparing to unpack .../x11-common_1%3a7.7+13ubuntu3_all.deb ...
+    default: Unpacking x11-common (1:7.7+13ubuntu3) ...
+    default: Selecting previously unselected package xfonts-encodings.
+    default: Preparing to unpack .../xfonts-encodings_1%3a1.0.4-2_all.deb ...
+    default: Unpacking xfonts-encodings (1:1.0.4-2) ...
+    default: Selecting previously unselected package xfonts-utils.
+    default: Preparing to unpack .../xfonts-utils_1%3a7.7+3ubuntu0.16.04.2_amd64.deb ...
+    default: Unpacking xfonts-utils (1:7.7+3ubuntu0.16.04.2) ...
+    default: Selecting previously unselected package gsfonts-x11.
+    default: Preparing to unpack .../gsfonts-x11_0.24_all.deb ...
+    default: Unpacking gsfonts-x11 (0.24) ...
+    default: Processing triggers for libc-bin (2.23-0ubuntu10) ...
+    default: Processing triggers for systemd (229-4ubuntu21.2) ...
+    default: Processing triggers for ureadahead (0.100.0-19) ...
+    default: Processing triggers for man-db (2.7.5-1) ...
+    default: Setting up oracle-java8-set-default (8u171-1~webupd8~0) ...
+    default: Setting up gsfonts (1:8.11+urwcyr1.0.7~pre44-4.2ubuntu1) ...
+    default: Setting up libfontenc1:amd64 (1:1.1.3-1) ...
+    default: Setting up libxfont1:amd64 (1:1.5.1-1ubuntu0.16.04.4) ...
+    default: Setting up x11-common (1:7.7+13ubuntu3) ...
+    default: update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+    default: Setting up xfonts-encodings (1:1.0.4-2) ...
+    default: Setting up xfonts-utils (1:7.7+3ubuntu0.16.04.2) ...
+    default: Setting up gsfonts-x11 (0.24) ...
+    default: Processing triggers for libc-bin (2.23-0ubuntu10) ...
+    default: Processing triggers for systemd (229-4ubuntu21.2) ...
+    default: Processing triggers for ureadahead (0.100.0-19) ...
+    default: java version "1.8.0_171"
+    default: Java(TM) SE Runtime Environment (build 1.8.0_171-b11)
+    default: Java HotSpot(TM) 64-Bit Server VM (build 25.171-b11, mixed mode)
+    default: 
+    default: Installing Maven-3.5.3
+    default: --2018-06-08 13:58:15--  http://www.eu.apache.org/dist/maven/maven-3/3.5.3/binaries/apache-maven-3.5.3-bin.tar.gz
+    default: Resolving www.eu.apache.org (www.eu.apache.org)... 
+    default: 95.216.24.32
+    default: , 
+    default: 2a01:4f9:2a:185f::2
+    default: Connecting to www.eu.apache.org (www.eu.apache.org)|95.216.24.32|:80... 
+    default: connected.
+    default: HTTP request sent, awaiting response... 
+    default: 200 OK
+    default: Length: 
+    default: 8799579
+    default:  (8.4M)
+    default:  [application/x-gzip]
+    default: Saving to: ‘apache-maven-3.5.3-bin.tar.gz’
+    default: 
+    default:      0K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: ..
+    default: .
+    default: ...... ..........
+    default:  .......... .
+    default: .....
+    default: .
+    default: ...  0%  147K 58s
+    default:     50K .......... .......... ......
+    default: .... .......... .......
+    default: .
+    default: ..  1%  305K 43s
+    default:    100K ..
+    default: ....
+    default: ....
+    default:  .......... .......... .........
+    default: . .
+    default: .........  1% 2.04M 30s
+    default:    150K .......... .........
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ...... .......... ..........  2%  226K 31s
+    default:    200K .......... .......... .......... .......... ..........  2%  189M 25s
+    default:    250K .......... .......... .......... .......... ..........  3%  462M 21s
+    default:    300K .......... .......... .......... .......... ..........  4%  473M 18s
+    default:    350K .......... .......... ......
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  ..
+    default: .
+    default: .
+    default: ..
+    default: .... .
+    default: ...
+    default: .
+    default: .....  4%  380K 18s
+    default:    400K .......... .......... .
+    default: .
+    default: .....
+    default: ... .
+    default: .
+    default: ........ ..........  5% 5.96M 16s
+    default:    450K ..
+    default: .
+    default: .
+    default: .
+    default: ...
+    default: .
+    default: . ..
+    default: .....
+    default: .
+    default: .. .......... .......... ........
+    default: .
+    default: .
+    default:   5%
+    default:  1.37M
+    default:  15s
+    default:    500K ....
+    default: .
+    default: ..
+    default: ...
+    default:  .
+    default: .
+    default: ..
+    default: .
+    default: ..
+    default: .
+    default: .
+    default: . .
+    default: .
+    default: ..
+    default: .
+    default: .
+    default: ..
+    default: .
+    default: . .
+    default: .
+    default: .
+    default: ..
+    default: ..... ..........  6% 25.1K 43s
+    default:    550K .....
+    default: ..... .......... ....
+    default: ......
+    default:  ......
+    default: ....
+    default:  .....
+    default: .....  6% 1.42M 39s
+    default:    600K .
+    default: ......... .......... .......... ..
+    default: ...
+    default: .
+    default: ..
+    default: .. ..........  7%  374K 38s
+    default:    650K .......... ....
+    default: ....
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ..... .......... .........
+    default: .
+    default:   8% 2.47M 35s
+    default:    700K .
+    default: ......... .....
+    default: .
+    default: .... ..
+    default: .
+    default: .....
+    default: .. ...
+    default: ......
+    default: .
+    default:  ..........  8% 2.01M 33s
+    default:    750K ...
+    default: .......
+    default:  ..........
+    default:  ...
+    default: .
+    default: ...... .......... ..........  9%  332K 32s
+    default:    800K ...
+    default: .
+    default: ...... .......... .......... ....
+    default: .
+    default: .
+    default: .... ..........  9% 2.86M 30s
+    default:    850K .......... .......
+    default: .
+    default: .. .......... ....
+    default: .
+    default: ..... .......... 10% 1.69M 28s
+    default:    900K .......... ..
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ... .......
+    default: .
+    default: .
+    default: . .......... ......
+    default: .... 11%  333K 28s
+    default: 
+    default:    950K .......... .......... .......... .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .... .......... 11% 4.04M 26s
+    default:   1000K .......... ..
+    default: .
+    default: ....... .......... .......... ...
+    default: .
+    default: .
+    default: ..
+    default: ... 12% 1.99M 25s
+    default:   1050K .......... .
+    default: .
+    default: ........ .....
+    default: ....
+    default: . ...
+    default: ....... ..
+    default: ...
+    default: ..
+    default: ... 12%  333K 25s
+    default:   1100K .......... .......... ........
+    default: .
+    default: .
+    default:  .......... .......... 13% 9.07M 24s
+    default:   1150K ....
+    default: .....
+    default: .
+    default:  ........
+    default: .
+    default: .
+    default:  .......... .......... .........
+    default: . 13% 2.64M 23s
+    default:   1200K ...
+    default: ....... .......
+    default: .
+    default: .
+    default: . ...
+    default: .
+    default: ...... .
+    default: ......
+    default: ... ....
+    default: ...... 14%  358K 22s
+    default:   1250K .....
+    default: .
+    default: .... .......... .......... ......
+    default: .
+    default: .
+    default: .
+    default: . .......... 15% 2.83M 22s
+    default:   1300K .......
+    default: ... ..........
+    default:  .........
+    default: . .......... .......... 15% 3.08M 21s
+    default:   1350K ..........
+    default:  
+    default: ..........
+    default:  .........
+    default: . .
+    default: ......
+    default: ... .
+    default: .....
+    default: .... 16%  405K 20s
+    default:   1400K .
+    default: ......... ........
+    default: .. ....
+    default: .
+    default: ..... .........
+    default: . .
+    default: .
+    default: ........ 16% 1.72M 20s
+    default: 
+    default:   1450K ..
+    default: ....
+    default: .... ....
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . .......... .......
+    default: .
+    default: .
+    default: . .......... 17% 3.06M 19s
+    default:   1500K .......... .
+    default: .
+    default: .
+    default: .....
+    default: .
+    default: . ......
+    default: .... ...
+    default: ....... .......... 18% 6.52M 18s
+    default: 
+    default:   1550K
+    default:  ...
+    default: .
+    default: ......
+    default:  ...
+    default: .
+    default: ....
+    default: ..
+    default:  ....
+    default: ...... ..........
+    default:  .
+    default: ......... 18%  349K 18s
+    default:   1600K .........
+    default: . ...
+    default: ....... .
+    default: .....
+    default: .
+    default: ..
+    default: .
+    default:  
+    default: ......
+    default: .... ......
+    default: .
+    default: ... 19% 3.86M 18s
+    default:   1650K .......
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .......... ...
+    default: ..
+    default: ...
+    default: .. ..
+    default: ..
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .. .......... 19% 2.61M 17s
+    default:   1700K .......... ...
+    default: .
+    default: ...... .........
+    default: .
+    default:  ..
+    default: ..
+    default: ..
+    default: .... ...
+    default: .
+    default: ....
+    default: .
+    default: .
+    default:  20%
+    default:   463K 17s
+    default:   1750K ......
+    default: .
+    default: .
+    default: .. ........
+    default: .. ..
+    default: ........ .........
+    default: .
+    default:  
+    default: .
+    default: ......... 20% 1.40M 16s
+    default:   1800K ......
+    default: .
+    default: .
+    default: .. .....
+    default: ....
+    default: . .......
+    default: ...
+    default:  .......... .......... 21% 3.02M 16s
+    default:   1850K .....
+    default: .
+    default: .... .......
+    default: .
+    default: .
+    default: .
+    default:  .......... .......... .
+    default: .
+    default: ........ 22% 3.83M 15s
+    default:   1900K .......
+    default: ... ......
+    default: ...
+    default: . .
+    default: ...
+    default: ......
+    default:  ........
+    default: .. .....
+    default: ..... 22%  413K 15s
+    default:   1950K ........
+    default: .
+    default: . ..
+    default: ........ .
+    default: ......... ........
+    default: .. .......... 23% 2.49M 15s
+    default:   2000K ..
+    default: ..
+    default: ..
+    default: ....
+    default:  ........
+    default: .. ......
+    default: .... ........
+    default: .. .......... 23% 2.71M 14s
+    default:   2050K ..
+    default: ........ ..
+    default: ........ .....
+    default: ..... .........
+    default: . .......... 24% 4.74M 14s
+    default:   2100K ....
+    default: ...... ......
+    default: .
+    default: ...
+    default:  ...
+    default: ....
+    default: .
+    default: .. .
+    default: ....
+    default: ..... .
+    default: .
+    default: ....
+    default: .... 25%  421K 14s
+    default:   2150K ........
+    default: .. ...
+    default: ....... ..
+    default: ........ ....
+    default: ...... .......... 25% 1.95M 14s
+    default:   2200K ....
+    default: ...... .......... .........
+    default: .
+    default:  
+    default: .
+    default: .
+    default: ........ ...
+    default: .
+    default: ...... 26% 2.54M 13s
+    default:   2250K .......... .......
+    default: ... .......... .......... .......
+    default: .
+    default: .
+    default: .
+    default:  26%
+    default:  6.15M
+    default:  13s
+    default:   2300K .......... .......... .....
+    default: .
+    default: ..
+    default: .. .
+    default: .....
+    default: .
+    default: ... ..
+    default: .
+    default: ....... 27%  499K 13s
+    default:   2350K ...
+    default: .
+    default: ..
+    default: .
+    default: .
+    default: .
+    default: . .......
+    default: ... .
+    default: ..
+    default: .
+    default: ...... .
+    default: .
+    default: ........ ....
+    default: ...
+    default: ... 27% 1.18M 13s
+    default:   2400K .....
+    default: ....
+    default: . ......
+    default: .... .....
+    default: ....
+    default: . ......
+    default: .... .....
+    default: ..... 28% 2.84M 12s
+    default:   2450K .......... .
+    default: .......
+    default: .. ...
+    default: ....
+    default: ... ...
+    default: ....... ..
+    default: ..
+    default: ...... 29% 4.37M 12s
+    default:   2500K .......... .
+    default: ......... ..
+    default: .
+    default: ....... ..........
+    default:  ...
+    default: ...
+    default: ...
+    default: . 29%  568K 12s
+    default:   2550K .......
+    default: ... ...
+    default: .......
+    default:  ....
+    default: .
+    default: ..... .......
+    default: ..
+    default: . .....
+    default: ..... 30% 1.16M 12s
+    default:   2600K ...
+    default: ....... ........
+    default: .. ..........
+    default:  ..
+    default: .
+    default: .
+    default: ...... .......... 30% 3.34M 11s
+    default:   2650K ...
+    default: .
+    default: ...... .......
+    default: .
+    default: .
+    default: .
+    default:  .......... .......... ......
+    default: .
+    default: .
+    default: .. 31% 2.90M 11s
+    default:   2700K ..........
+    default:  .....
+    default: ..... ..
+    default: .......
+    default: . ....
+    default: ...... ......
+    default: .... 32% 4.88M 11s
+    default: 
+    default:   2750K .
+    default: ....
+    default: ..... .......
+    default: ... .
+    default: ...
+    default: ..
+    default: ...
+    default: . .......... ...
+    default: ...
+    default: .... 32%  523K 11s
+    default:   2800K .....
+    default: ..... .........
+    default: . .
+    default: ......
+    default: ... ....
+    default: ...... ...
+    default: ....
+    default: ... 33% 1.29M 10s
+    default:   2850K .
+    default: ......... .
+    default: ....
+    default: ..... ......
+    default: .
+    default: ... .......... .......... 33% 4.41M 10s
+    default:   2900K ...
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .. .......... ...
+    default: .
+    default: .
+    default: ..... ....
+    default: .
+    default: .
+    default: .
+    default: ... .......... 34% 2.58M 10s
+    default:   2950K ........
+    default: .
+    default: .
+    default:  
+    default: ..
+    default: ........ ......
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: ........ .......... 34% 4.17M 10s
+    default:   3000K .......... .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ...
+    default: .. .
+    default: .........
+    default:  ........
+    default: .
+    default: . ......
+    default: .
+    default: .
+    default: .. 35%  493K 10s
+    default:   3050K .......... ...
+    default: ...
+    default: .... ..
+    default: .....
+    default: ... ..........
+    default:  ...
+    default: .....
+    default: .. 36% 1.84M 10s
+    default:   3100K ....
+    default: ...
+    default: .
+    default: .. .......... .
+    default: .
+    default: .
+    default: ....... .....
+    default: ....
+    default: . .........
+    default: . 36% 4.60M 9s
+    default:   3150K .
+    default: .
+    default: ........ .......... ....
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . .......... .......... 37% 2.50M 9s
+    default:   3200K ........
+    default: .
+    default: . .......... .......... ........
+    default: .
+    default: .
+    default:  
+    default: .......... 37% 3.03M 9s
+    default:   3250K .......... ....
+    default: .
+    default: .
+    default: .
+    default: ... .
+    default: ...
+    default: .
+    default: ..... .......... ....
+    default: ...... 38%  592K 9s
+    default:   3300K ..
+    default: .
+    default: .
+    default: ...... ....
+    default: .
+    default: .
+    default: .
+    default: ... ........
+    default: .
+    default: .
+    default:  
+    default: .....
+    default: .
+    default: .... ......
+    default: .... 38% 1.34M 9s
+    default: 
+    default:   3350K
+    default:  
+    default: ..........
+    default:  
+    default: .......... .......... .
+    default: .
+    default: ........ ....
+    default: ...... 39% 4.68M 8s
+    default:   3400K ......
+    default: .
+    default: .
+    default: .. ..
+    default: .
+    default: .
+    default: .
+    default: ..... .......... .......... .......... 40% 2.24M 8s
+    default:   3450K ......
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: ........
+    default:  
+    default: .......... ..
+    default: ..
+    default: ...... ....
+    default: ..
+    default: .... 40% 4.18M 8s
+    default:   3500K ..
+    default: .
+    default: ....... ..
+    default: .......
+    default: . .......
+    default: ...
+    default:  ...
+    default: ......
+    default: . .
+    default: ......... 41%  570K 8s
+    default: 
+    default:   3550K .......... ...
+    default: .......
+    default:  .......... .
+    default: .
+    default: .
+    default: ....... .
+    default: .
+    default: ....
+    default: .
+    default: ... 41% 1.66M 8s
+    default:   3600K .....
+    default: ..... .......
+    default: .
+    default: .. ......
+    default: .
+    default: .
+    default: .. ...
+    default: .....
+    default: ..
+    default:  ........
+    default: .
+    default: . 42% 1.77M 8s
+    default:   3650K .......... .......... .......... .....
+    default: .
+    default: .... .......... 43% 4.79M 8s
+    default:   3700K ......
+    default: .
+    default: ... ......
+    default: .... .......... .
+    default: .........
+    default:  .....
+    default: ..... 43% 4.32M 7s
+    default:   3750K ........
+    default: .. ........
+    default: .
+    default: . .......... .
+    default: ..
+    default: ...
+    default: .... .......... 44% 5.94M 7s
+    default:   3800K ..
+    default: .
+    default: ....... .
+    default: ......
+    default: ... ...
+    default: ....... .
+    default: ....
+    default: ..... ....
+    default: ...... 44%  574K 7s
+    default:   3850K ..
+    default: ......
+    default: .. .......... ..
+    default: ......
+    default: .. ......
+    default: .... .......... 45% 1.57M 7s
+    default: 
+    default:   3900K .......
+    default: ...
+    default:  .......
+    default: ... ..........
+    default:  ....
+    default: ....
+    default: .
+    default: . .......... 45% 2.06M 7s
+    default:   3950K .......... ..........
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ...... .......... .......... 46% 3.86M 7s
+    default:   4000K .......... ...
+    default: .
+    default: .
+    default: ..... ........
+    default: .. .
+    default: .....
+    default: .
+    default: ... .........
+    default: .
+    default:  47%
+    default:  3.54M
+    default:  7s
+    default:   4050K .......... .......... .......... .......
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ..... 47% 6.80M 6s
+    default:   4100K ...
+    default: .
+    default: ....
+    default: .
+    default: . .......
+    default: ... ..
+    default: .
+    default: ....... ...
+    default: .
+    default: .
+    default: .
+    default: .... ........
+    default: .
+    default: .
+    default:  48%
+    default:   562K
+    default:  6s
+    default: 
+    default:   4150K .......... .......... ...
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .. ...
+    default: .
+    default: ...... .....
+    default: ..
+    default: ... 48% 1.69M 6s
+    default:   4200K ........
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: ....
+    default: .... ......
+    default: .
+    default: ... ........
+    default: .. .....
+    default: .
+    default: .... 49% 2.96M 6s
+    default: 
+    default:   4250K .......
+    default: ... .......... .
+    default: .
+    default: .
+    default: ....... .......... .......... 50% 3.29M 6s
+    default:   4300K ..
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ... .......... .......... .....
+    default: .
+    default: ....
+    default:  
+    default: .
+    default: .
+    default: ......
+    default: .
+    default: .
+    default:  50%
+    default:  2.92M
+    default:  6s
+    default: 
+    default:   4350K .......... .......... .......... .......... .......... 51% 13.1M 6s
+    default:   4400K .......... .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .. .....
+    default: .
+    default: ....
+    default:  ..
+    default: .
+    default: ....... .......... 51%  613K 6s
+    default:   4450K ........
+    default: .. .
+    default: .........
+    default:  .......... .
+    default: .
+    default: .
+    default: ..
+    default: .
+    default: .
+    default: ... ...
+    default: .
+    default: ...... 52% 1.73M 6s
+    default:   4500K .
+    default: .
+    default: ......
+    default: .. ...
+    default: ......
+    default: . .........
+    default: .
+    default:  .......
+    default: ...
+    default:  .
+    default: ......... 52% 2.33M 6s
+    default:   4550K .
+    default: ...
+    default: ...... .......... ....
+    default: ....
+    default: .. ......
+    default: ..
+    default: .. .......... 53% 2.84M 5s
+    default:   4600K ..........
+    default:  ....
+    default: .....
+    default: . .......... .
+    default: ......... .....
+    default: .
+    default: .... 54% 7.13M 5s
+    default:   4650K .........
+    default: .
+    default:  .........
+    default: .
+    default:  .......... ..........
+    default:  .......... 54% 3.92M 5s
+    default:   4700K .......... .......
+    default: ... .......... ...
+    default: .....
+    default: .
+    default: . .........
+    default: .
+    default:  55%  677K 5s
+    default:   4750K .....
+    default: .
+    default: .... .......... .
+    default: ......... ..
+    default: .
+    default: ....... ......
+    default: .... 55% 3.06M 5s
+    default: 
+    default:   4800K ....
+    default: ......
+    default:  ........
+    default: .. .......... .......
+    default: .
+    default: .
+    default: .
+    default:  ......
+    default: .... 56% 1.44M 5s
+    default:   4850K .........
+    default: .
+    default:  ........
+    default: .
+    default: . .........
+    default: .
+    default:  .......... .......... 57% 3.44M 5s
+    default: 
+    default:   4900K
+    default:  
+    default: .......
+    default: ... ..........
+    default:  
+    default: .
+    default: .
+    default: .
+    default: ....... .......... .......... 57% 2.75M 5s
+    default:   4950K ..........
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ..... .......... .......... ....
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . 58% 5.12M 5s
+    default:   5000K .......... .
+    default: .
+    default: ..
+    default: ...... ......
+    default: .
+    default: ... .......... .
+    default: .....
+    default: .... 58% 4.41M 5s
+    default:   5050K ......
+    default: ...
+    default: . ....
+    default: ...... .
+    default: .....
+    default: .
+    default: ... ..........
+    default:  .
+    default: ......
+    default: ... 59%  671K 4s
+    default:   5100K .
+    default: ......... .......... .......... ........
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: ........ 59% 3.19M 4s
+    default: 
+    default:   5150K
+    default:  ......
+    default: .... .
+    default: .
+    default: .
+    default: ......
+    default: . ........
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: ........ .......... 60% 1.68M 4s
+    default:   5200K .........
+    default: .
+    default:  
+    default: .....
+    default: .
+    default: .... .....
+    default: .
+    default: .... .....
+    default: .
+    default: .
+    default: ... .......... 61% 3.58M 4s
+    default:   5250K .......... ..........
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ..... .......... .......... 61% 2.77M 4s
+    default:   5300K .....
+    default: .
+    default: .
+    default: .
+    default: .. .......... .......... .......... ....
+    default: .
+    default: .
+    default: .
+    default: ... 62% 6.36M 4s
+    default:   5350K .......... ...
+    default: .
+    default: .
+    default: ..
+    default: ... .......
+    default: .
+    default: .
+    default: . ....
+    default: ...... ..
+    default: ........ 62% 4.34M 4s
+    default:   5400K .....
+    default: ..... .......
+    default: ... .........
+    default: . ....
+    default: .
+    default: .
+    default: .
+    default: ... ........
+    default: .
+    default: . 63%  768K 4s
+    default:   5450K ....
+    default: .
+    default: ..... .......... ....
+    default: .
+    default: ..... .......... .
+    default: .......
+    default: .. 64% 2.37M 4s
+    default: 
+    default:   5500K ...
+    default: ....... .
+    default: ......... .
+    default: ......... ...
+    default: ....
+    default: ... .......... 64% 1.55M 4s
+    default:   5550K .......... ....
+    default: .
+    default: .
+    default: .... .......... .......... ..
+    default: ........ 65% 2.27M 4s
+    default:   5600K ..
+    default: .....
+    default: ... ....
+    default: .
+    default: ..... .......... .
+    default: .
+    default: ...
+    default: ..... .......
+    default: .
+    default: .. 65% 5.25M 4s
+    default:   5650K ........
+    default: .. .......... .....
+    default: .
+    default: .
+    default: .
+    default: .. .......... ....
+    default: .
+    default: ..... 66% 4.42M 3s
+    default:   5700K .......... .......... .
+    default: .
+    default: ........ .......... ......
+    default: ..
+    default: .. 66% 8.18M 3s
+    default:   5750K ......
+    default: ...
+    default: . .......... .....
+    default: ..... ....
+    default: ...... .
+    default: .......
+    default: .. 67% 2.77M 3s
+    default:   5800K ........
+    default: .. .......... ..
+    default: ........ .
+    default: ......... ..
+    default: ....
+    default: .... 68%  727K 3s
+    default:   5850K .....
+    default: ..... .......... .........
+    default: .
+    default:  ....
+    default: ...... ...
+    default: ....... 68% 3.58M 3s
+    default: 
+    default:   5900K .......... .
+    default: ......... .........
+    default: . .......... .
+    default: .
+    default: ....
+    default: .... 69% 1.29M 3s
+    default:   5950K .....
+    default: ..
+    default: ... ......
+    default: .... ...
+    default: ....... .
+    default: ......... .
+    default: .......
+    default: .. 69% 3.59M 3s
+    default:   6000K .....
+    default: ..... ..
+    default: ........ ......
+    default: .... ......
+    default: .... .......... 70% 4.87M 3s
+    default:   6050K .........
+    default: . ..........
+    default:  .
+    default: .....
+    default: .... ........
+    default: .
+    default: . .......... 70% 3.31M 3s
+    default:   6100K ....
+    default: .
+    default: .
+    default: .
+    default: ... .......... ........
+    default: .. ......
+    default: .... .......
+    default: ... 71% 8.31M 3s
+    default:   6150K ........
+    default: .. .
+    default: ......... ........
+    default: ..
+    default:  .....
+    default: ..... ......
+    default: .... 72% 4.45M 3s
+    default:   6200K ..
+    default: ........ .....
+    default: .
+    default: ..
+    default: .. .....
+    default: ..... .........
+    default: . ........
+    default: .. 72%  754K 3s
+    default:   6250K .......... .....
+    default: ..... .......
+    default: ... ......
+    default: ..
+    default: .. .........
+    default: .
+    default:  73% 1.86M 3s
+    default:   6300K ........
+    default: .
+    default: . .......... ...
+    default: ....... .......... ...
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ... 73% 2.49M 3s
+    default:   6350K .......
+    default: ... ....
+    default: .
+    default: ..... ........
+    default: .
+    default: . .......... .......... 74% 2.05M 2s
+    default:   6400K .....
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .......... .......... .......... .......... 75% 9.55M 2s
+    default:   6450K ........
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ... ......
+    default: .
+    default: .
+    default: .. ......
+    default: .... ...
+    default: ..
+    default: .
+    default: .... 75% 4.39M 2s
+    default:   6500K .......
+    default: ... ......
+    default: .... ....
+    default: .
+    default: ..... .......... ....
+    default: .
+    default: ..... 76% 7.26M 2s
+    default:   6550K ..
+    default: ........ .....
+    default: ..... .........
+    default: . ..
+    default: ........ ......
+    default: .... 76% 4.95M 2s
+    default:   6600K ..........
+    default:  ......
+    default: .... .......... .
+    default: .
+    default: .......
+    default: .
+    default:  .......... 77%  762K 2s
+    default:   6650K ...
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ... .......... ......
+    default: .... ..
+    default: .....
+    default: ... .......... 77% 7.06M 2s
+    default:   6700K ...
+    default: ....... .......
+    default: ... ..
+    default: ........ .....
+    default: ..... ..
+    default: .......
+    default: . 78% 1.68M 2s
+    default:   6750K .......... ...
+    default: ...
+    default: .... ...
+    default: ....
+    default: ... ......
+    default: ....
+    default:  ...
+    default: .
+    default: ...... 79% 1.35M 2s
+    default:   6800K ..........
+    default:  .....
+    default: ..... .......... ........
+    default: .
+    default: .
+    default:  
+    default: .
+    default: ......... 79% 3.88M 2s
+    default:   6850K .......... .......... ....
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .......... .......... 80% 7.97M 2s
+    default:   6900K .......... .........
+    default: . .......... ..
+    default: .
+    default: .
+    default: .
+    default: ..... ........
+    default: .
+    default: .
+    default:  80%
+    default:  9.71M
+    default:  2s
+    default: 
+    default:   6950K
+    default:  .......... .......... .......... .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ...
+    default: .. .......... 81% 5.96M 2s
+    default:   7000K .......... .......... ......
+    default: .
+    default: .
+    default: .
+    default: . .......... .......... 82% 12.9M 2s
+    default: 
+    default:   7050K ........
+    default: .. ...
+    default: .
+    default: ...... ...
+    default: .
+    default: ...... ....
+    default: ....
+    default: .. ......
+    default: .... 82%  795K 2s
+    default:   7100K ..
+    default: ...
+    default: ..... ........
+    default: .. ......
+    default: ...
+    default: . ...
+    default: ....... .......... 83% 4.10M 1s
+    default:   7150K .
+    default: ......
+    default: .
+    default: .. ...
+    default: ....... .
+    default: .
+    default: .
+    default: .
+    default: ...... .......... .......... 83% 1.86M 1s
+    default:   7200K .
+    default: .
+    default: .
+    default: ...
+    default: .
+    default: ... .......
+    default: ... ......
+    default: .
+    default: .
+    default: .
+    default: . ....
+    default: .
+    default: ..... ...
+    default: ....
+    default: ... 84% 1.34M 1s
+    default:   7250K .
+    default: .
+    default: ........ ....
+    default: ...... .......... .......... .
+    default: .
+    default: .
+    default: ....... 84% 2.26M 1s
+    default:   7300K .......... .......
+    default: ... .......... .
+    default: .
+    default: ........ .......... 85% 8.14M 1s
+    default:   7350K ....
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: . .......... .......... .........
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: ....... 86% 5.31M 1s
+    default:   7400K .......... ..........
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ...... .......... .......... 86% 8.16M 1s
+    default:   7450K .......... ........
+    default: .
+    default: .
+    default:  
+    default: .......... .......... .......... 87% 14.1M 1s
+    default:   7500K .......
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: ...
+    default: ......
+    default:  
+    default: .
+    default: .......
+    default: .
+    default: .
+    default:  .......... .....
+    default: .
+    default: .
+    default: .
+    default: .. 87% 1.01M 1s
+    default:   7550K .........
+    default: . ..
+    default: ....
+    default: .... ...
+    default: ....
+    default: ... ......
+    default: ....
+    default:  ......
+    default: .... 88% 3.39M 1s
+    default:   7600K ...
+    default: .....
+    default: .. .......
+    default: ...
+    default:  .....
+    default: ..... ....
+    default: ...... ......
+    default: .... 89% 2.01M 1s
+    default:   7650K ...
+    default: ....... .........
+    default: . ....
+    default: .
+    default: .....
+    default:  
+    default: ........
+    default: .. .......
+    default: .
+    default: .. 89% 1.49M 1s
+    default:   7700K .......
+    default: .
+    default: .
+    default: . .....
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  .......... .
+    default: .
+    default: ........ .
+    default: ......... 90% 4.27M 1s
+    default:   7750K ...
+    default: ....
+    default: ... ....
+    default: ...
+    default: ..
+    default: . .......... .
+    default: ...
+    default: ..
+    default: .
+    default: ... .......... 90% 2.39M 1s
+    default:   7800K .
+    default: ......
+    default: ... ......
+    default: .
+    default: ... ...
+    default: ....... ......
+    default: .
+    default: ... .......... 91% 7.48M 1s
+    default:   7850K ......
+    default: .
+    default: ... .
+    default: .
+    default: .
+    default: ....... .......
+    default: ... .
+    default: .
+    default: .
+    default: ....... .......... 91% 3.71M 1s
+    default:   7900K
+    default:  
+    default: .
+    default: .
+    default: .
+    default: ....... .......... .......... .......... ...
+    default: ....... 92% 7.91M 1s
+    default:   7950K .......... .......... .......... .....
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .
+    default: ...
+    default: . 93% 4.24M 1s
+    default:   8000K ..
+    default: ......
+    default: .
+    default: .
+    default:  ..........
+    default:  .......... .........
+    default: . ...
+    default: .
+    default: .
+    default: ..... 93% 1.47M 1s
+    default:   8050K ....
+    default: .
+    default: ..
+    default: .
+    default: .
+    default: . .......... .
+    default: .
+    default: ........ ....
+    default: ...... .....
+    default: .
+    default: .... 94% 4.46M 0s
+    default:   8100K .
+    default: .
+    default: .
+    default: .....
+    default: .
+    default: . .......
+    default: ... ......
+    default: ....
+    default:  .
+    default: .........
+    default:  ....
+    default: ...... 94% 1.92M 0s
+    default:   8150K .
+    default: ......... .
+    default: .
+    default: ........ ....
+    default: .
+    default: ..... ......
+    default: ...
+    default: . ...
+    default: ..
+    default: ..... 95% 1.48M 0s
+    default:   8200K ...
+    default: ....... ...
+    default: ......
+    default: .
+    default:  
+    default: .......... .......... ....
+    default: .
+    default: .
+    default: .
+    default: .
+    default: .. 96% 2.79M 0s
+    default:   8250K ........
+    default: .
+    default: .
+    default:  
+    default: .......... .........
+    default: . .
+    default: ..
+    default: ....... ...
+    default: ....... 96% 3.16M 0s
+    default:   8300K ...
+    default: ....... ...
+    default: ....
+    default: ... ..........
+    default:  
+    default: .
+    default: .
+    default: ........ .......... 97% 6.56M 0s
+    default:   8350K .......... .......... ........
+    default: .
+    default: .
+    default:  
+    default: .
+    default: .
+    default: ........ .......... 97% 6.30M 0s
+    default: 
+    default:   8400K
+    default:  
+    default: .
+    default: ......... .......... .......... .......... ..
+    default: .
+    default: .
+    default: ...... 98% 4.88M 0s
+    default:   8450K ......
+    default: .... .......... ..........
+    default:  ......
+    default: .... ........
+    default: .. 98% 6.63M 0s
+    default:   8500K ...
+    default: ....
+    default: ... .
+    default: ..
+    default: ....... .
+    default: ...
+    default: ...... .....
+    default: ..... .......... 99% 1.43M 0s
+    default:   8550K ..........
+    default:  ..
+    default: .
+    default: ....... ..
+    default: ....
+    default: .
+    default: ... ......
+    default: .... ...       100% 3.80M=7.9s
+    default: 
+    default: 2018-06-08 13:58:23 (1.06 MB/s) - ‘apache-maven-3.5.3-bin.tar.gz’ saved [8799579/8799579]
+    default: apache-maven-3.5.3/README.txt
+    default: apache-maven-3.5.3/LICENSE
+    default: apache-maven-3.5.3/NOTICE
+    default: apache-maven-3.5.3/lib/
+    default: apache-maven-3.5.3/lib/cdi-api.license
+    default: apache-maven-3.5.3/lib/commons-cli.license
+    default: apache-maven-3.5.3/lib/commons-io.license
+    default: apache-maven-3.5.3/lib/commons-lang3.license
+    default: apache-maven-3.5.3/lib/jcl-over-slf4j.license
+    default: apache-maven-3.5.3/lib/jsr250-api.license
+    default: apache-maven-3.5.3/lib/maven-artifact.license
+    default: apache-maven-3.5.3/lib/maven-builder-support.license
+    default: apache-maven-3.5.3/lib/maven-compat.license
+    default: apache-maven-3.5.3/lib/maven-core.license
+    default: apache-maven-3.5.3/lib/maven-embedder.license
+    default: apache-maven-3.5.3/lib/maven-model-builder.license
+    default: apache-maven-3.5.3/lib/maven-model.license
+    default: apache-maven-3.5.3/lib/maven-plugin-api.license
+    default: apache-maven-3.5.3/lib/maven-repository-metadata.license
+    default: apache-maven-3.5.3/lib/maven-resolver-api.license
+    default: apache-maven-3.5.3/lib/maven-resolver-connector-basic.license
+    default: apache-maven-3.5.3/lib/maven-resolver-impl.license
+    default: apache-maven-3.5.3/lib/maven-resolver-provider.license
+    default: apache-maven-3.5.3/lib/maven-resolver-spi.license
+    default: apache-maven-3.5.3/lib/maven-resolver-transport-wagon.license
+    default: apache-maven-3.5.3/lib/maven-resolver-util.license
+    default: apache-maven-3.5.3/lib/maven-settings-builder.license
+    default: apache-maven-3.5.3/lib/maven-settings.license
+    default: apache-maven-3.5.3/lib/maven-shared-utils.license
+    default: apache-maven-3.5.3/lib/maven-slf4j-provider.license
+    default: apache-maven-3.5.3/lib/org.eclipse.sisu.inject.license
+    default: apache-maven-3.5.3/lib/org.eclipse.sisu.plexus.license
+    default: apache-maven-3.5.3/lib/plexus-cipher.license
+    default: apache-maven-3.5.3/lib/plexus-component-annotations.license
+    default: apache-maven-3.5.3/lib/plexus-interpolation.license
+    default: apache-maven-3.5.3/lib/plexus-sec-dispatcher.license
+    default: apache-maven-3.5.3/lib/plexus-utils.license
+    default: apache-maven-3.5.3/lib/slf4j-api.license
+    default: apache-maven-3.5.3/lib/wagon-file.license
+    default: apache-maven-3.5.3/lib/wagon-http.license
+    default: apache-maven-3.5.3/lib/wagon-provider-api.license
+    default: apache-maven-3.5.3/lib/jansi-native/
+    default: apache-maven-3.5.3/lib/jansi-native/freebsd32/
+    default: apache-maven-3.5.3/lib/jansi-native/freebsd64/
+    default: apache-maven-3.5.3/lib/jansi-native/linux32/
+    default: apache-maven-3.5.3/lib/jansi-native/linux64/
+    default: apache-maven-3.5.3/lib/jansi-native/osx/
+    default: apache-maven-3.5.3/lib/jansi-native/windows32/
+    default: apache-maven-3.5.3/lib/jansi-native/windows64/
+    default: apache-maven-3.5.3/lib/jansi-native/freebsd32/libjansi.so
+    default: apache-maven-3.5.3/lib/jansi-native/freebsd64/libjansi.so
+    default: apache-maven-3.5.3/lib/jansi-native/linux32/libjansi.so
+    default: apache-maven-3.5.3/lib/jansi-native/linux64/libjansi.so
+    default: apache-maven-3.5.3/lib/jansi-native/osx/libjansi.jnilib
+    default: apache-maven-3.5.3/lib/jansi-native/windows32/jansi.dll
+    default: apache-maven-3.5.3/lib/jansi-native/windows64/jansi.dll
+    default: apache-maven-3.5.3/bin/m2.conf
+    default: apache-maven-3.5.3/bin/mvn.cmd
+    default: apache-maven-3.5.3/bin/mvnDebug.cmd
+    default: apache-maven-3.5.3/bin/mvn
+    default: apache-maven-3.5.3/bin/mvnDebug
+    default: apache-maven-3.5.3/bin/mvnyjp
+    default: apache-maven-3.5.3/conf/
+    default: apache-maven-3.5.3/conf/logging/
+    default: apache-maven-3.5.3/conf/logging/simplelogger.properties
+    default: apache-maven-3.5.3/conf/settings.xml
+    default: apache-maven-3.5.3/conf/toolchains.xml
+    default: apache-maven-3.5.3/lib/ext/
+    default: apache-maven-3.5.3/lib/jansi-native/
+    default: apache-maven-3.5.3/lib/ext/README.txt
+    default: apache-maven-3.5.3/lib/jansi-native/README.txt
+    default: apache-maven-3.5.3/boot/plexus-classworlds-2.5.2.jar
+    default: apache-maven-3.5.3/lib/maven-embedder-3.5.3.jar
+    default: apache-maven-3.5.3/lib/maven-settings-3.5.3.jar
+    default: apache-maven-3.5.3/lib/plexus-utils-3.1.0.jar
+    default: apache-maven-3.5.3/lib/maven-settings-builder-3.5.3.jar
+    default: apache-maven-3.5.3/lib/maven-builder-support-3.5.3.jar
+    default: apache-maven-3.5.3/lib/commons-lang3-3.5.jar
+    default: apache-maven-3.5.3/lib/plexus-interpolation-1.24.jar
+    default: apache-maven-3.5.3/lib/plexus-component-annotations-1.7.1.jar
+    default: apache-maven-3.5.3/lib/plexus-sec-dispatcher-1.4.jar
+    default: apache-maven-3.5.3/lib/plexus-cipher-1.7.jar
+    default: apache-maven-3.5.3/lib/maven-core-3.5.3.jar
+    default: apache-maven-3.5.3/lib/maven-model-3.5.3.jar
+    default: apache-maven-3.5.3/lib/maven-repository-metadata-3.5.3.jar
+    default: apache-maven-3.5.3/lib/maven-artifact-3.5.3.jar
+    default: apache-maven-3.5.3/lib/maven-plugin-api-3.5.3.jar
+    default: apache-maven-3.5.3/lib/org.eclipse.sisu.plexus-0.3.3.jar
+    default: apache-maven-3.5.3/lib/cdi-api-1.0.jar
+    default: apache-maven-3.5.3/lib/jsr250-api-1.0.jar
+    default: apache-maven-3.5.3/lib/javax.inject-1.jar
+    default: apache-maven-3.5.3/lib/org.eclipse.sisu.inject-0.3.3.jar
+    default: apache-maven-3.5.3/lib/maven-model-builder-3.5.3.jar
+    default: apache-maven-3.5.3/lib/guava-20.0.jar
+    default: apache-maven-3.5.3/lib/maven-resolver-provider-3.5.3.jar
+    default: apache-maven-3.5.3/lib/maven-resolver-api-1.1.1.jar
+    default: apache-maven-3.5.3/lib/maven-resolver-spi-1.1.1.jar
+    default: apache-maven-3.5.3/lib/maven-resolver-util-1.1.1.jar
+    default: apache-maven-3.5.3/lib/maven-resolver-impl-1.1.1.jar
+    default: apache-maven-3.5.3/lib/maven-shared-utils-3.2.1.jar
+    default: apache-maven-3.5.3/lib/commons-io-2.5.jar
+    default: apache-maven-3.5.3/lib/guice-4.0-no_aop.jar
+    default: apache-maven-3.5.3/lib/aopalliance-1.0.jar
+    default: apache-maven-3.5.3/lib/slf4j-api-1.7.25.jar
+    default: apache-maven-3.5.3/lib/commons-cli-1.4.jar
+    default: apache-maven-3.5.3/lib/maven-compat-3.5.3.jar
+    default: apache-maven-3.5.3/lib/wagon-provider-api-3.0.0.jar
+    default: apache-maven-3.5.3/lib/wagon-http-3.0.0-shaded.jar
+    default: apache-maven-3.5.3/lib/jcl-over-slf4j-1.7.25.jar
+    default: apache-maven-3.5.3/lib/wagon-file-3.0.0.jar
+    default: apache-maven-3.5.3/lib/maven-resolver-connector-basic-1.1.1.jar
+    default: apache-maven-3.5.3/lib/maven-resolver-transport-wagon-1.1.1.jar
+    default: apache-maven-3.5.3/lib/maven-slf4j-provider-3.5.3.jar
+    default: apache-maven-3.5.3/lib/jansi-1.17.jar
+    default: Creating .m2 directory
+    default: Copy default settings.xml in .m2 directory
+    default: A
+    default: p
+    default: a
+    default: c
+    default: h
+    default: e
+    default:  
+    default: M
+    default: a
+    default: v
+    default: e
+    default: n
+    default:  
+    default: 3
+    default: .
+    default: 5
+    default: .
+    default: 3
+    default:  
+    default: (
+    default: 3
+    default: 3
+    default: 8
+    default: 3
+    default: c
+    default: 3
+    default: 7
+    default: e
+    default: 1
+    default: f
+    default: 9
+    default: e
+    default: 9
+    default: b
+    default: 3
+    default: b
+    default: c
+    default: 3
+    default: d
+    default: f
+    default: 5
+    default: 0
+    default: 5
+    default: 0
+    default: c
+    default: 2
+    default: 9
+    default: c
+    default: 8
+    default: a
+    default: f
+    default: f
+    default: 9
+    default: f
+    default: 2
+    default: 9
+    default: 5
+    default: 2
+    default: 9
+    default: 7
+    default: ;
+    default:  
+    default: 2
+    default: 0
+    default: 1
+    default: 8
+    default: -
+    default: 0
+    default: 2
+    default: -
+    default: 2
+    default: 4
+    default: T
+    default: 1
+    default: 9
+    default: :
+    default: 4
+    default: 9
+    default: :
+    default: 0
+    default: 5
+    default: Z
+    default: )
+    default: M
+    default: a
+    default: v
+    default: e
+    default: n
+    default:  
+    default: h
+    default: o
+    default: m
+    default: e
+    default: :
+    default:  
+    default: /
+    default: o
+    default: p
+    default: t
+    default: /apache-maven-3.5.3
+    default: Java version: 1.8.0_171, vendor: Oracle Corporation
+    default: Java home: /usr/
+    default: l
+    default: i
+    default: b
+    default: /
+    default: j
+    default: v
+    default: m
+    default: /
+    default: j
+    default: a
+    default: v
+    default: a
+    default: -
+    default: 8
+    default: -oracle/jre
+    default: Default locale: en_US, platform encoding: UTF-8
+    default: OS name: "linux", version: "4.4.0-127-generic", arch: "amd64", family: "unix"
+    default: Installing SVN
+    default: Reading package lists...
+    default: Building dependency tree...
+    default: 
+    default: Reading state information...
+    default: The following additional packages will be installed:
+    default:   libapr1 libaprutil1 libserf-1-1 libsvn1
+    default: Suggested packages:
+    default:   db5.3-util subversion-tools
+    default: The following NEW packages will be installed:
+    default:   libapr1 libaprutil1 libserf-1-1 libsvn1 subversion
+    default: 0 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+    default: Need to get 1,687 kB of archives.
+    default: After this operation, 6,653 kB of additional disk space will be used.
+    default: Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libapr1 amd64 1.5.2-3 [86.0 kB]
+    default: Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1 amd64 1.5.4-1build1 [77.1 kB]
+    default: Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libserf-1-1 amd64 1.3.8-1 [45.5 kB]
+    default: Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libsvn1 amd64 1.9.3-2ubuntu1.1 [1,170 kB]
+    default: Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 subversion amd64 1.9.3-2ubuntu1.1 [308 kB]
+    default: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+    default: Fetched 1,687 kB in 22s (74.8 kB/s)
+    default: Selecting previously unselected package libapr1:amd64.
+    default: (Reading database ... 
+    default: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%
+    default: (Reading database ... 45%(Reading database ... 50%(Reading database ... 55%
+    default: (Reading database ... 60%(Reading database ... 65%
+    default: (Reading database ... 70%
+    default: (Reading database ... 75%
+    default: (Reading database ... 80%
+    default: (Reading database ... 85%
+    default: (Reading database ... 90%
+    default: (Reading database ... 95%
+    default: (Reading database ... 100%(Reading database ... 54707 files and directories currently installed.)
+    default: Preparing to unpack .../libapr1_1.5.2-3_amd64.deb ...
+    default: Unpacking libapr1:amd64 (1.5.2-3) ...
+    default: Selecting previously unselected package libaprutil1:amd64.
+    default: Preparing to unpack .../libaprutil1_1.5.4-1build1_amd64.deb ...
+    default: Unpacking libaprutil1:amd64 (1.5.4-1build1) ...
+    default: Selecting previously unselected package libserf-1-1:amd64.
+    default: Preparing to unpack .../libserf-1-1_1.3.8-1_amd64.deb ...
+    default: Unpacking libserf-1-1:amd64 (1.3.8-1) ...
+    default: Selecting previously unselected package libsvn1:amd64.
+    default: Preparing to unpack .../libsvn1_1.9.3-2ubuntu1.1_amd64.deb ...
+    default: Unpacking libsvn1:amd64 (1.9.3-2ubuntu1.1) ...
+    default: Selecting previously unselected package subversion.
+    default: Preparing to unpack .../subversion_1.9.3-2ubuntu1.1_amd64.deb ...
+    default: Unpacking subversion (1.9.3-2ubuntu1.1) ...
+    default: Processing triggers for libc-bin (2.23-0ubuntu10) ...
+    default: Processing triggers for man-db (2.7.5-1) ...
+    default: Setting up libapr1:amd64 (1.5.2-3) ...
+    default: Setting up libaprutil1:amd64 (1.5.4-1build1) ...
+    default: Setting up libserf-1-1:amd64 (1.3.8-1) ...
+    default: Setting up libsvn1:amd64 (1.9.3-2ubuntu1.1) ...
+    default: Setting up subversion (1.9.3-2ubuntu1.1) ...
+    default: Processing triggers for libc-bin (2.23-0ubuntu10) ...
